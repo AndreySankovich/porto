@@ -524,28 +524,13 @@ body {
 .contacts__social {
   display: flex;
   position: relative;
-}
-
-.contacts__link {
-  position: absolute;
+  max-width: 170px;
   justify-content: space-between;
 }
 
-/* 
-.contacts__link--instagram::before {
-  content: url("../images/instagram.svg");
+.contacts__link {
+  justify-content: space-between;
 }
-
-.contacts__link--facebook::before {
-  content: url("../images/facebook.svg");
-  margin-left: 20px;
-}
-
-.contacts__link--telegram::before {
-  content: url("../images/telegram.svg");
-  margin-left: 20px;
-} */
-
 
 .contact__data {
   display: flex;
@@ -577,7 +562,7 @@ body {
 .contacts__link--instagram,
 .contacts__link--facebook,
 .contacts__link--telegram {
-  transition: transform 0.5s;
+  transition: transform 0.3s;
 }
 
 .contacts__link--instagram:hover,
