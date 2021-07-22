@@ -2,7 +2,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 25px;
+  line-height: 1.3;
   background-color: #fff;
   color: #333;
 }
@@ -10,7 +10,6 @@ body {
 .title {
   font-weight: 700;
   font-size: 48px;
-  line-height: 62px;
   display: inline-block;
   position: relative;
 }
@@ -37,7 +36,6 @@ body {
   padding: 12px 24px;
   font-weight: 600;
   font-size: 18px;
-  line-height: 23px;
   margin: auto;
   transition: color 0.5s, border-radius 0.3s;
 }
@@ -105,7 +103,6 @@ body {
 
 .menu__link {
   font-size: 18px;
-  line-height: 25px;
   font-weight: 600;
   color: #fff;
   transition: color 0.5s;
@@ -125,13 +122,13 @@ body {
 .hero__content-title {
   font-weight: 400;
   font-size: 48px;
-  line-height: 125px;
+  line-height: 1.4;
 }
 
 .hero__content-text {
   font-weight: 700;
   font-size: 90px;
-  line-height: 85px;
+  line-height: 1.4;
 }
 
 .hero__anhor {
@@ -140,7 +137,6 @@ body {
   color: #fff;
   font-weight: 600;
   font-size: 18px;
-  line-height: 25px;
   padding-bottom: 63px;
   position: relative;
   width: 170px;
@@ -148,7 +144,7 @@ body {
 }
 
 .hero__anhor::after {
-  content: url("../images/arrow-down.svg");
+  content: url("../images/icons/arrow-down.svg");
   width: 37px;
   height: 21px;
   position: absolute;
@@ -178,9 +174,8 @@ body {
 }
 
 .about__text {
-  font-style: normal;
   font-size: 18px;
-  line-height: 29px;
+  line-height: 1.6;
   text-align: justify;
 }
 
@@ -192,8 +187,7 @@ body {
 }
 
 .skills__title {
-  margin-bottom: 57px;
-  margin-top: -31px;
+  margin-bottom: 60px;
 }
 
 .skills__inner {
@@ -275,7 +269,7 @@ body {
   margin-bottom: 25px;
   font-weight: 600;
   font-size: 28px;
-  line-height: 36px;
+  padding-top: 10px;
 }
 
 .services__card {
@@ -288,21 +282,20 @@ body {
 .services__card::before {
   content: "";
   position: absolute;
-  top: -7px;
+  top: 0;
   left: 0;
 }
 
-
 .services__card--code::before {
-  content: url("../images/code-icon.svg");
+  content: url("../images/icons/code-icon.svg");
 }
 
 .services__card--cms::before {
-  content: url("../images/cms-icon.svg");
+  content: url("../images/icons/cms-icon.svg");
 }
 
 .services__card--chat::before {
-  content: url("../images/chat-icon.svg");
+  content: url("../images/icons/chat-icon.svg");
 }
 
 .services__card-icon {
@@ -330,7 +323,6 @@ body {
 .portfolio__btn {
   font-weight: 600;
   font-size: 24px;
-  line-height: 38px;
   transition: color 0.3s;
 }
 
@@ -409,7 +401,6 @@ body {
 
 .reviews__text {
   font-size: 24px;
-  line-height: 31px;
   font-style: italic;
   margin-top: 20px;
 }
@@ -425,6 +416,7 @@ body {
   max-height: 400px;
   min-height: 400px;
   cursor: pointer;
+
 }
 
 .reviews__video--play::before {
@@ -446,12 +438,13 @@ body {
 }
 
 .reviews__video::after {
-  content: url("../images/blackout.png");
+  content: '';
   position: absolute;
   max-width: 570px;
   width: 100%;
   max-height: 400px;
   min-height: 400px;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .success {
@@ -475,32 +468,31 @@ body {
 }
 
 .success__card--case::before {
-  content: url('../images/card-1.svg');
+  content: url('../images/icons/bag.svg');
 }
 
 .success__card--clients::before {
-  content: url('../images/card-2.svg');
+  content: url('../images/icons/people.svg');
 }
 
 .success__card--coffe::before {
-  content: url('../images/card-3.svg');
+  content: url('../images/icons/coffe.svg');
 }
 
 .success__card--rev::before {
-  content: url('../images/card-4.svg');
+  content: url('../images/icons/recall.svg');
 }
 
 .card__text {
   display: block;
   font-size: 18px;
-  line-height: 23px;
   padding-top: 10px;
   margin-bottom: 20px;
 }
 
 .card__number {
   font-size: 44px;
-  line-height: 44px;
+  line-height: 1;
   font-weight: 600;
 }
 
@@ -528,22 +520,21 @@ body {
   justify-content: space-between;
 }
 
-.contacts__link {
-  justify-content: space-between;
-}
-
 .contact__data {
   display: flex;
   flex-direction: column;
-  line-height: 21px;
+  font-size: 16px;
   color: #2352de;
   width: 260px;
   max-width: 100%;
-
 }
 
 .contact__connection {
   margin-bottom: 15px;
+}
+
+.contact__connection:hover {
+  color: #a123bc;
 }
 
 .contact__connection--email {
@@ -551,7 +542,8 @@ body {
 }
 
 .contacts__text {
-  line-height: 26px;
+  font-size: 16px;
+  line-height: 1.6;
   margin-bottom: 30px;
 }
 
@@ -559,9 +551,7 @@ body {
   cursor: pointer;
 }
 
-.contacts__link--instagram,
-.contacts__link--facebook,
-.contacts__link--telegram {
+.contacts__link {
   transition: transform 0.3s;
 }
 
@@ -576,69 +566,59 @@ body {
   width: 100%;
 }
 
-.input__info {
+.form__info {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10px;
 }
 
-.input__text {
+.form__label {
   max-width: 255px;
   width: 100%;
+  margin-bottom: 30px;
+  font-weight: 600;
 }
 
-.input__text--area {
-  max-width: 540px;
-  width: 100%;
-}
-
-.form input,
-.form textarea {
+.form__text {
   font-weight: 400;
   font-size: 16px;
-  line-height: 25px;
-  padding: 5px;
+  line-height: 1.5;
   border: none;
   background-color: #f6f6f8;
-}
-
-.input__text--name {
-  margin-right: 30px;
-}
-
-
-
-.form input {
-  width: 100%;
   padding: 11px 10px 15px 10px;
-  display: block;
+  width: 100%;
+  border: none;
   margin-top: 10px;
 }
 
-.form textarea {
+.form__text--name,
+.form__text-number {
+  width: 100%;
+  display: block;
+  margin-right: 30px;
+}
+
+.form__label--area {
+  max-width: 540px;
   width: 100%;
   min-height: 115px;
   resize: none;
   padding: 15px 10px;
   display: block;
-  outline-color: #2352de;
 }
 
-.form textarea::placeholder,
-.form input::placeholder {
+.form__label--area::placeholder,
+.form__text::placeholder {
   font-size: 14px;
   color: #9c9cab;
 }
 
-.input__text,
-.input__info-text {
+.form__text,
+.form__info-text {
   font-size: 14px;
-  line-height: 18px;
   font-weight: 600;
-  margin-bottom: 8px;
 }
 
-input[type=text]:focus {
+.form__text:focus {
   outline-color: #2352de;
 }
 
