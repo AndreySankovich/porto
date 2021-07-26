@@ -1,6 +1,10 @@
 $(function () {
-  $('.menu__btn').on('click', function () {
-    $('.header').toggleClass('header--active');
+  $('.menu-btn').on('click', function () {
+    $('.menu__list').toggleClass('menu__list--active');
+  });
+
+  $('.menu-btn').on('click', function () {
+    $('.menu-btn').toggleClass('menu-btn--active');
   });
 
   $('.menu a').on('click', function (event) {
