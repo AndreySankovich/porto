@@ -380,17 +380,23 @@ body {
 
 .portfolio__content {
   display: flex;
-  margin-right: auto;
+  justify-content: flex-start;
   flex-wrap: wrap;
-  cursor: pointer;
-  margin-bottom: 8px;
+  margin-left: -30px;
 }
 
 .portfolio__item {
-  margin: -5px 25px 48px 0;
   cursor: pointer;
   border: 2px solid transparent;
   transition: transform 0.5s, border-color 0.3s;
+  max-width: calc(100% / 3 - 30px);
+  margin: 0px 30px 45px 0px;
+}
+
+.portfolio__img {
+  max-width: 360px;
+  height: 360px;
+  object-fit: cover;
 }
 
 .portfolio__item:hover {
@@ -398,11 +404,12 @@ body {
   border-color: #2352de;
 }
 
-
 .portfolio__item:nth-child(3),
 .portfolio__item:nth-last-child() {
   margin-right: 0;
 }
+
+
 
 .reviews {
   padding: 140px 0;
@@ -683,7 +690,8 @@ body {
 @media(max-width: 1024px) {
 
   .about,
-  .skills {
+  .skills,
+  .services {
     padding: 70px 0;
   }
 
@@ -698,7 +706,18 @@ body {
   .skills__box--bar {
     margin: auto;
   }
+
+  .services__inner {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .services__card {
+    margin-bottom: 60px;
+  }
 }
+
+
 
 @media(max-width: 840px) {
   .logo {
