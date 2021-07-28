@@ -691,7 +691,8 @@ body {
 
   .about,
   .skills,
-  .services {
+  .services,
+  .portfolio {
     padding: 70px 0;
   }
 
@@ -715,13 +716,45 @@ body {
   .services__card {
     margin-bottom: 60px;
   }
+
+  .portfolio {
+    padding-top: 0;
+  }
+
+  .portfolio__content {
+    justify-content: space-evenly;
+  }
+
+  .portfolio__item {
+    max-width: 100%;
+    margin: 10px auto;
+  }
+
+  .portfolio__img {
+    max-width: 460px;
+  }
+
+  .portfolio__btn {
+    margin-top: 60px;
+  }
+
+  .portfolio__box,
+  .portfolio__filter {
+    margin-bottom: 40px;
+  }
+
+  .portfolio__point:not(:last-child) {
+    margin-right: 25px;
+  }
 }
-
-
 
 @media(max-width: 840px) {
   .logo {
     z-index: 11;
+  }
+
+  .services {
+    padding-bottom: 35px;
   }
 
   .menu-btn {
@@ -764,4 +797,99 @@ body {
     font-size: 24px;
   }
 
+  .portfolio {
+    padding-top: 0;
+  }
+
+  .portfolio__content {
+    justify-content: space-around;
+    margin-left: 0;
+  }
+
+  .portfolio__item {
+    max-width: 100%;
+    margin: 10px auto;
+  }
+
+  .portfolio__box {
+    margin-bottom: 30px;
+  }
+
+  .portfolio__filter {
+    margin-bottom: 30px;
+  }
+
+  .portfolio__point:not(:last-child) {
+    margin-right: 35px;
+  }
+
+  .portfolio__btn {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .portfolio__img {
+    max-width: 360px;
+  }
+
+}
+
+
+
+@media(max-width: 640px) {
+
+  .about__title,
+  .skills__title,
+  .portfolio__title {
+    margin-bottom: 30px;
+  }
+
+  .portfolio__filter {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .portfolio__content {
+    margin-left: 0;
+  }
+
+  .portfolio__img {
+    max-width: 100%;
+  }
+
+  .services__card {
+    max-width: 260px;
+  }
+}
+
+@media(max-width: 320px) {
+
+  .about,
+  .skills {
+    padding: 35px 0;
+  }
+
+  .title {
+    font-size: 44px;
+  }
+
+  .header {
+    padding-top: 10px;
+  }
+
+  .menu__item+.menu__item {
+    margin-left: 0;
+  }
+
+  .hero__content-title {
+    font-size: 20px;
+  }
+
+  .hero__content-text {
+    font-size: 40px;
+  }
+
+  .about__text {
+    font-size: 16px;
+  }
 }
