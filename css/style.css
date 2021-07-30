@@ -692,8 +692,15 @@ body {
   .about,
   .skills,
   .services,
-  .portfolio {
+  .portfolio,
+  .reviews,
+  .success,
+  .contacts {
     padding: 70px 0;
+  }
+
+  .success {
+    padding-bottom: 35px;
   }
 
   .skills__inner {
@@ -723,6 +730,7 @@ body {
 
   .portfolio__content {
     justify-content: space-evenly;
+    margin-bottom: 60px;
   }
 
   .portfolio__item {
@@ -734,10 +742,6 @@ body {
     max-width: 460px;
   }
 
-  .portfolio__btn {
-    margin-top: 60px;
-  }
-
   .portfolio__box,
   .portfolio__filter {
     margin-bottom: 40px;
@@ -745,6 +749,10 @@ body {
 
   .portfolio__point:not(:last-child) {
     margin-right: 25px;
+  }
+
+  .success__card:not(:last-child) {
+    margin-right: 15px;
   }
 }
 
@@ -781,10 +789,15 @@ body {
     margin: auto -10px;
     height: 100vh;
     z-index: 9;
+    overflow-y: scroll;
   }
 
   .menu-btn.menu-btn--active .menu__list {
     transform: translateY(0%);
+  }
+
+  .menu__item+.menu__item {
+    margin-left: 0;
   }
 
   ul.menu__list {
@@ -832,16 +845,59 @@ body {
     max-width: 360px;
   }
 
-}
+  .portfolio__content {
+    margin-bottom: 40px;
+  }
 
+  .card__text {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .card__number {
+    font-size: 34px;
+  }
+
+  .form__info {
+    display: block;
+  }
+
+  .form__text,
+  .form__info-text {
+    margin-bottom: 20px;
+  }
+}
 
 
 @media(max-width: 640px) {
 
+  .about,
+  .skills,
+  .services,
+  .portfolio,
+  .reviews,
+  .success,
+  .contacts {
+    padding: 35px 0;
+  }
+
+  .title::after {
+    display: none;
+  }
+
   .about__title,
   .skills__title,
-  .portfolio__title {
+  .portfolio__title,
+  .contacts__title {
     margin-bottom: 30px;
+  }
+
+  .hero__content-title {
+    font-size: 35px;
+  }
+
+  .hero__content-text {
+    font-size: 55px;
   }
 
   .portfolio__filter {
@@ -860,12 +916,85 @@ body {
   .services__card {
     max-width: 260px;
   }
+
+  .skills__bar {
+    max-width: 500px;
+  }
+
+  .skills__progress {
+    justify-content: space-around;
+  }
+
+  .skills__bar::after {
+    max-width: 413px;
+  }
+
+  .skills__bar--m::after {
+    max-width: 320px;
+  }
+
+  .skills__bar--s::after {
+    max-width: 220px;
+  }
+
+  .portfolio__btn {
+    font-size: 18px;
+    margin-top: 0;
+  }
+
+  .reviews__inner {
+    flex-direction: column-reverse;
+  }
+
+  .reviews__video::after {
+    max-width: 100%;
+  }
+
+  .reviews__video {
+    max-width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .reviews__name {
+    font-size: 20px;
+  }
+
+  .reviews__text {
+    font-size: 18px;
+  }
+
+  .success__cards {
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 15px;
+    row-gap: 15px;
+  }
+
+  .success__card:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .contacts__wrapper {
+    display: block;
+  }
+
+  .contacts__social {
+    margin-bottom: 40px;
+  }
+
+  .form,
+  .form .form__label--area {
+    max-width: 100%;
+  }
+
 }
 
 @media(max-width: 320px) {
 
   .about,
-  .skills {
+  .skills,
+  .portfolio {
     padding: 35px 0;
   }
 
@@ -875,10 +1004,6 @@ body {
 
   .header {
     padding-top: 10px;
-  }
-
-  .menu__item+.menu__item {
-    margin-left: 0;
   }
 
   .hero__content-title {
@@ -891,5 +1016,47 @@ body {
 
   .about__text {
     font-size: 16px;
+  }
+
+  .skills__img {
+    object-fit: cover;
+    margin: 0px auto 50px;
+  }
+
+  .skills__bar {
+    max-width: 200px;
+  }
+
+  .skills__bar::after {
+    max-width: 170px;
+  }
+
+  .skills__bar--m::after {
+    max-width: 150px;
+  }
+
+  .skills__bar--s::after {
+    max-width: 120px;
+  }
+
+  .skills__progress:not(:last-child) {
+    margin-bottom: 43px;
+  }
+
+  .portfolio__filter {
+    flex-direction: column;
+    align-items: end;
+  }
+
+  .portfolio__point:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  .portfolio__filter {
+    margin-bottom: 15px;
+  }
+
+  .success__card--coffe {
+    margin-bottom: 15px;
   }
 }
