@@ -15,6 +15,10 @@ $(function () {
     $('body,html').animate({ scrollTop: top }, 1500);
   });
 
+  $('.menu-btn').on('click', function () {
+    $('body').toggleClass('body-hidden')
+  })
+
   var mixer = mixitup('.portfolio__content');
 
 });
