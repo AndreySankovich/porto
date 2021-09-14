@@ -17,21 +17,19 @@
 </head>
 
 <body>
+
   <section class="hero">
     <div class="container">
       <div class="hero__wrapper">
         <header class="header">
           <a class="logo" href="#">
-            <img class="logo-img" src="images/logo.svg" width="159" height="52" alt="Лого">
+            <img class="logo-img" src="images/icons/logo.svg" width="159" height="52" alt="Лого">
           </a>
           <nav class="menu">
-            <button class="menu__btn">
-              <?xml version="1.0" encoding="UTF-8"?>
-              <svg width="30" height="18" viewBox="0 0 30 18">
-                <path d="M0 0H30V2H0V0Z" fill="white"></path>
-                <path d="M0 8H30V10H0V8Z" fill="white"></path>
-                <rect y="16" width="30" height="2" fill="white"></rect>
-              </svg>
+            <button class="menu-btn">
+              <span class="menu-btn-first"></span>
+              <span class="menu-btn-center"></span>
+              <span class="menu-btn-last"></span>
             </button>
             <ul class="menu__list">
               <li class="menu__item">
@@ -54,7 +52,6 @@
               </li>
             </ul>
           </nav>
-
         </header>
 
         <div class="hero__content">
@@ -93,27 +90,35 @@
   <section class="skills" id="skills">
     <div class="container">
       <h2 class="title skills__title">Навыки</h2>
+
+
       <div class="skills__inner">
         <img class="skills__img" src="images/photo.jpg" width="415" height="450" alt="Фото">
+        <div class="skills__info">
+          <div class="skills__info-item--bar">
+            <div class="skills__info-item--html">html</div>
+            <div class="skills__info-item">
+              <span style="width: calc(100% - 80%)"></span>
+            </div>
+          </div>
 
-        <div class="skills__box skills__box--bar">
-          <div class="skills__progress">
-            <span class="skills__text">html</span>
-            <span class="skills__bar"></span>
+          <div class="skills__info-item--bar">
+            <div class="skills__info-item--css">css</div>
+            <div class="skills__info-item">
+              <span style="width: calc(100% - 65%)"></span>
+            </div>
           </div>
-          <div class="skills__progress">
-            <span class="skills__text">css</span>
-            <span class="skills__bar skills__bar--m"></span>
-          </div>
-          <div class="skills__progress">
-            <span class="skills__text">js</span>
-            <span class="skills__bar skills__bar--s"></span>
+          <div class="skills__info-item--bar">
+            <div class="skills__info-item--js">js</div>
+            <div class="skills__info-item">
+              <span style="width: calc(100% - 50%)"></span>
+            </div>
           </div>
         </div>
-
       </div>
     </div>
   </section>
+
 
   <section class="services" id="services">
     <div class="container">
@@ -173,46 +178,45 @@
         <li class="portfolio__item mix category-a">
           <a class="portfolio__link" href="images/portfolio/01.jpg" data-fancybox="gallery" data-width="1920"
             data-height="1080">
-            <img class="portfolio__img" src="images/portfolio/01.jpg" width="360" height="360" alt="река">
+            <img class="portfolio__img" src="images/portfolio/01.jpg" alt="река">
           </a>
         </li>
 
         <li class="portfolio__item mix category-a">
           <a class="portfolio__link" href="images/portfolio/02.jpg" data-fancybox="gallery" data-width="1920"
             data-height="1080">
-            <img class="portfolio__img" src="images/portfolio/02.jpg" width="360" height="360" alt="мост и лодки">
+            <img class="portfolio__img" src="images/portfolio/02.jpg" alt="мост и лодки">
           </a>
         </li>
 
         <li class="portfolio__item mix category-b">
           <a class="portfolio__link" href="images/portfolio/03.jpg" data-fancybox="gallery" data-width="1920"
             data-height="1080">
-            <img class="portfolio__img" src="images/portfolio/03.jpg" width="360" height="360" alt="мост и трамвай">
+            <img class="portfolio__img" src="images/portfolio/03.jpg" alt="мост и трамвай">
           </a>
         </li>
 
         <li class="portfolio__item mix category-b">
           <a class="portfolio__link" href="images/portfolio/04.jpg" data-fancybox="gallery" data-width="1920"
             data-height="1080">
-            <img class="portfolio__img" src="images/portfolio/04.jpg" width="360" height="360" alt="река в городе">
+            <img class="portfolio__img" src="images/portfolio/04.jpg" alt="река в городе">
           </a>
         </li>
 
         <li class="portfolio__item mix category-c">
           <a class="portfolio__link" href="images/portfolio/05.jpg" data-fancybox="gallery" data-width="1920"
             data-height="1080">
-            <img class="portfolio__img" src="images/portfolio/05.jpg" width="360" height="360" alt="пляж и пальмы">
+            <img class="portfolio__img" src="images/portfolio/05.jpg" alt="пляж и пальмы">
           </a>
         </li>
 
         <li class="portfolio__item mix category-a">
           <a class="portfolio__link" href="images/portfolio/06.jpg" data-fancybox="gallery" data-width="1920"
             data-height="1080">
-            <img class="portfolio__img" src="images/portfolio/06.jpg" width="360" height="360" alt="море и скала">
+            <img class="portfolio__img" src="images/portfolio/06.jpg" alt="море и скала">
           </a>
         </li>
       </ul>
-
       <button class="btn portfolio__btn" type="button">Загрузить еще</button>
     </div>
   </section>
@@ -284,33 +288,33 @@
           <div class="contacts__social">
             <div class="contacts__link--instagram">
               <a class="contacts__link" href="https://www.instagram.com/?hl=ru">
-                <img src="images/telegram.svg" alt="инстаграм">
+                <img class="contacts__img" src="images/icons/instagram.svg" alt="инстаграм">
               </a>
             </div>
             <div class="contacts__link--facebook">
               <a class="contacts__link" href="https://www.facebook.com/">
-                <img src="images/facebook.svg" alt="фейсбук">
+                <img class="contacts__img" src="images/icons/facebook.svg" alt="фейсбук">
               </a>
             </div>
             <div class="contacts__link--telegram">
               <a class="contacts__link" href="https://web.telegram.org/z/">
-                <img src="images/telegram.svg" alt="телеграм">
+                <img class="contacts__img" src="images/icons/telegram.svg" alt="телеграм">
               </a>
             </div>
           </div>
         </adress>
 
         <form class="form">
-          <div class="input__info">
-            <label class="input__text input__text--name">Ваше имя
-              <input type="text" name="name" placeholder="Имя">
+          <div class="form__info">
+            <label class="form__label form__label--name">Ваше имя
+              <input class="form__text form__text--input" type="text" name="name" placeholder="Имя">
             </label>
-            <label class="input__text input__text--number">Номер телефона
-              <input type="text" name="phone" placeholder="Номер телефона">
+            <label class="form__label form__label--number">Номер телефона
+              <input class="form__text form__text--input" type="text" name="phone" placeholder="Номер телефона">
             </label>
           </div>
-          <label class="input__text">Ваше сообщение
-            <textarea class="input__text--area" placeholder="Текст вашего сообщения"></textarea>
+          <label class="form__label">Ваше сообщение
+            <textarea class="form__text form__label--area" placeholder="Текст вашего сообщения"></textarea>
           </label>
           <button class="form__btn btn" type="submit">Отправить</button>
         </form>
@@ -320,7 +324,7 @@
 
   <footer class="footer">
     <a class="footer-logo" href="#">
-      <img src="images/logo.svg" width="158" height="52" alt="logo">
+      <img src="images/icons/logo.svg" width="158" height="52" alt="logo">
     </a>
   </footer>
 
