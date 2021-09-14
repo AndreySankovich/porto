@@ -17,7 +17,17 @@ $(function () {
 
   $('.menu-btn').on('click', function () {
     $('body').toggleClass('body-hidden')
-  })
+  });
+
+  $('a[href^="#"').on('click', function () {
+
+    let href = $(this).attr('href');
+
+    $('html, body').animate({
+      scrollTop: $(href).offset().top
+    });
+    return false;
+  });
 
   var mixer = mixitup('.portfolio__content');
 
